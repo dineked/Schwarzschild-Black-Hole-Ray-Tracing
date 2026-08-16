@@ -1,1 +1,0 @@
-This folder contains selected figures from the Schwarzschild ray-tracing project.
