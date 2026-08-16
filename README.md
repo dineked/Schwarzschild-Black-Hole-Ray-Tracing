@@ -37,6 +37,22 @@ The equations are integrated using SciPy's `solve_ivp` with adaptive numerical i
 
 The ray tracer handles inward and outward radial branches separately and detects capture, escape, and turning-point events.
 
+## Example Result
+
+The numerical ray tracer identifies the critical impact parameter as
+
+$$
+b_{\mathrm{crit}} = 5.196152422707\,M.
+$$
+
+For example, the numerical classification gives:
+
+```text
+b = 5.196000  →  CAPTURE
+b = 5.196200  →  ESCAPE
+```
+This illustrates the sharp transition between photon capture and escape near the critical impact parameter.
+
 ## Results
 
 ### Near-Critical Capture and Escape
@@ -94,6 +110,7 @@ Clone the repository and install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
+
 ## Running the Code
 
 The main experimental driver is `experiments.py`. It runs the
@@ -105,6 +122,10 @@ After installing the dependencies, run:
 ```bash
 python experiments.py
 ```
+The script produces the numerical ray-tracing reuslts and visualisations used to analyse photon capture, escape, near-critical trajectories, and the Schwarzschild shadow.
+
+## Thesis
+The full bachelor's thesis accompanying this project is available in `thesis` folder.
 
 ## Author
 
