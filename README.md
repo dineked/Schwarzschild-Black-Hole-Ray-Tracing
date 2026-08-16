@@ -94,6 +94,17 @@ Clone the repository and install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
+## Running the Code
+
+The main experimental driver is `experiments.py`. It runs the
+capture–escape trajectory experiments, near-critical trajectory
+analysis, and Schwarzschild shadow visualisations.
+
+After installing the dependencies, run:
+
+```bash
+python experiments.py
+```
 
 ## Author
 
